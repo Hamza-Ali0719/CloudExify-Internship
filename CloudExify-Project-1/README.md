@@ -37,5 +37,5 @@ A command-line expense tracking application built in Python. Users can add, view
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Hamza-Ali0719/CloudExify-Project-1.git
+   git clone https://github.com/Hamza-Ali0719/CloudExify-Internship/tree/main/CloudExify-Project-1
    cd CloudExify-Project-1
