@@ -160,8 +160,8 @@ CloudExify-Month-1/
 
 ## 📎 Project Links
 
-* 🔗 [Expense Tracker Repository](https://github.com/Hamza-Ali0719/CloudExify-Project-1)
-* 🔗 [Grade Management System Repository](https://github.com/Hamza-Ali0719/CloudExify-Project-2)
+* 🔗 [Expense Tracker Repository](https://github.com/Hamza-Ali0719/CloudExify-Internship/tree/main/CloudExify-Project-1)
+* 🔗 [Grade Management System Repository](https://github.com/Hamza-Ali0719/CloudExify-Internship/tree/main/CloudExify-Project-2)
 
 ---
 
