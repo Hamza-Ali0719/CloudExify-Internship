@@ -3,13 +3,20 @@ CloudExify Python Internship - Month 1
 Project: Personal Expense Tracker
 Author: Hamza Ali
 Intern ID: CX-INT-2026-PY-0129
+
+✨ UPDATED: Auto-save after every action. JSON file auto-creates.
 """
 
 import json
 import os
 
 # File to store expenses
-DATA_FILE = "expenses.json"
+import os
+
+# Get the folder where this Python file is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+# Create the full path to the JSON file in the SAME folder
+DATA_FILE = os.path.join(SCRIPT_DIR, "expenses.json")
 
 # Predefined categories
 CATEGORIES = ["Food", "Transport", "Shopping", "Bills", "Other"]
@@ -20,13 +27,19 @@ next_id = 1
 
 
 def load_expenses():
-    """Load expenses from JSON file on startup."""
+    """Load expenses from JSON file. Auto-creates if missing."""
     global expenses, next_id
 
+    # If file doesn't exist, CREATE it automatically!
     if not os.path.exists(DATA_FILE):
-        print("📂 No previous data found. Starting fresh!")
+        print("📂 No previous data found. Creating new expenses.json...")
+        default_data = {"expenses": [], "next_id": 1}
+        with open(DATA_FILE, "w") as f:
+            json.dump(default_data, f, indent=4)
+        print("✅ expenses.json created successfully!")
         return
 
+    # If file exists, load it
     try:
         with open(DATA_FILE, "r") as file:
             data = json.load(file)
@@ -46,13 +59,12 @@ def save_expenses():
     try:
         with open(DATA_FILE, "w") as file:
             json.dump(data, file, indent=4)
-        print("💾 Expenses saved successfully!")
     except Exception as e:
         print(f"❌ Error saving: {e}")
 
 
 def add_expense():
-    """Add a new expense with validation."""
+    """Add a new expense with validation and AUTO-SAVE."""
     global next_id
 
     print("\n--- ADD NEW EXPENSE ---")
@@ -98,8 +110,11 @@ def add_expense():
     }
 
     expenses.append(expense)
-    print(f"✅ Expense added! ID: {next_id}")
     next_id += 1
+
+    # 🔥 AUTO-SAVE IMMEDIATELY!
+    save_expenses()
+    print(f"✅ Expense added! ID: {expense['id']} (Auto-saved)")
 
 
 def view_expenses():
@@ -184,7 +199,7 @@ def filter_by_category():
 
 
 def delete_expense():
-    """Delete an expense by ID with confirmation."""
+    """Delete an expense by ID with confirmation and AUTO-SAVE."""
     if not expenses:
         print("\n📭 No expenses to delete!")
         return
@@ -216,7 +231,10 @@ def delete_expense():
         return
 
     expenses.remove(found)
-    print(f"✅ Expense ID {exp_id} deleted successfully!")
+
+    # 🔥 AUTO-SAVE IMMEDIATELY!
+    save_expenses()
+    print(f"✅ Expense ID {exp_id} deleted successfully! (Auto-saved)")
 
 
 def show_menu():
@@ -229,13 +247,15 @@ def show_menu():
     print("3.  Category Summary")
     print("4.  Filter by Category")
     print("5.  Delete Expense")
-    print("6.  Save & Exit")
+    print("6.  Exit (Auto-saves on close)")  # Updated label
     print("=" * 45)
 
 
 def main():
     """Main program loop."""
     print("\n🚀 Welcome to CloudExify Expense Tracker!")
+    
+    # This will auto-create the file if missing
     load_expenses()
 
     while True:
@@ -243,7 +263,7 @@ def main():
         choice = input("Select option (1-6): ").strip()
 
         if choice == "1":
-            add_expense()
+            add_expense()  # Auto-saves inside
         elif choice == "2":
             view_expenses()
         elif choice == "3":
@@ -251,10 +271,10 @@ def main():
         elif choice == "4":
             filter_by_category()
         elif choice == "5":
-            delete_expense()
+            delete_expense()  # Auto-saves inside
         elif choice == "6":
-            save_expenses()
-            print("\n👋 Goodbye! Your expenses have been saved.")
+            save_expenses()  # Final safety save
+            print("\n👋 Goodbye! All data saved.")
             break
         else:
             print("❌ Invalid choice! Please enter 1-6.")
