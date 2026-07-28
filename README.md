@@ -196,10 +196,10 @@ CloudExify-Internship/
 
 ## 🔗 Project Links
 
-* Project 1: https://github.com/Hamza-Ali0719/CloudExify-Project-1
-* Project 2: https://github.com/Hamza-Ali0719/CloudExify-Project-2
-* Project 3: https://github.com/Hamza-Ali0719/cloudexify-python-p3-hamzaali
-* Project 4: https://github.com/Hamza-Ali0719/cloudexify-python-p4-hamzaali
+* Project 1: https://github.com/Hamza-Ali0719/CloudExify-Internship/tree/main/CloudExify-Project-1
+* Project 2: https://github.com/Hamza-Ali0719/CloudExify-Internship/tree/main/CloudExify-Project-2
+* Project 3: https://github.com/Hamza-Ali0719/CloudExify-Internship/tree/main/CloudExify-Project-3
+* Project 4: https://github.com/Hamza-Ali0719/CloudExify-Internship/tree/main/CloudExify-Project-4/CloudExify-Project-4
 
 ---
 
