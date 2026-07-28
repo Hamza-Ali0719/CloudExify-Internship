@@ -1,0 +1,13 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "title": "Hamza",
+            "priority": "High",
+            "due_date": "No due date",
+            "status": "Done",
+            "created": "2026-07-28 20:35"
+        }
+    ],
+    "next_id": 2
+}
