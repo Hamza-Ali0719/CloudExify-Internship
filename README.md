@@ -1,52 +1,47 @@
-# 🚀 CloudExify Internship – Month 1 Portfolio
+# 🚀 CloudExify Internship – Complete Portfolio
 
 **Author:** Hamza Ali
 **Intern ID:** CX-INT-2026-PY-0129
-**Month:** July 2026
-**Status:** ✅ Both Projects Completed
+**Duration:** July – August 2026
+**Status:** ✅ All 4 Projects Completed
 
 ---
 
 ## 📌 Overview
 
-Welcome to my **Month 1 Portfolio** for the **CloudExify Python Internship Program 2026**.
+Welcome to my **complete portfolio** for the **CloudExify Python Internship Program 2026**.
 
-This month focused on building a **strong foundation in Python** by developing two real-world **Command-Line Interface (CLI)** applications. These projects demonstrate core programming concepts, including:
+Over the course of two months, I designed and developed **four real-world Python applications** from scratch. Each project progressively strengthened my understanding of core programming concepts, problem-solving, and practical software development.
 
-* Python fundamentals
-* Control flow
-* Functions & modular design
-* File handling (JSON & CSV)
-* Data structures
-
-> *"I don't just learn; I build. I don't just copy; I understand."*
+> *“I don’t just learn — I build. I don’t just copy — I understand.”*
 
 ---
 
 ## 🗂️ Projects at a Glance
 
-| #     | Project                                                                        | Description                                       | Key Skills                                | Deadline | Status |
-| ----- | ------------------------------------------------------------------------------ | ------------------------------------------------- | ----------------------------------------- | -------- | ------ |
-| **1** | [Personal Expense Tracker](#-project-1-personal-expense-tracker)               | CLI tool to track daily expenses by category      | Functions, Lists, Dicts, JSON, Validation | 15 July  | ✅      |
-| **2** | [Student Grade Management System](#-project-2-student-grade-management-system) | CLI system to manage student records and rankings | OOP Basics, CSV, Sorting, Statistics      | 30 July  | ✅      |
+| # | Project                         | Description                                              | Key Skills                                       | Month   | Status |
+| - | ------------------------------- | -------------------------------------------------------- | ------------------------------------------------ | ------- | ------ |
+| 1 | Personal Expense Tracker        | CLI tool to track daily expenses by category             | Functions, Lists, Dictionaries, JSON, Validation | Month 1 | ✅      |
+| 2 | Student Grade Management System | Manage student records, grades, and rankings             | OOP Basics, CSV, Sorting, Statistics             | Month 1 | ✅      |
+| 3 | Python Quiz Game                | Interactive quiz with randomized Python questions        | Random Module, File I/O, Score Tracking          | Month 2 | ✅      |
+| 4 | To-Do List Manager              | Task manager with priorities, filtering, and persistence | JSON, Datetime, Filtering, Statistics            | Month 2 | ✅      |
 
 ---
 
 ## 📁 Project 1: Personal Expense Tracker
 
-### 🎯 What It Does
+### 🎯 Overview
 
-A CLI application to track daily expenses with categories, summaries, and persistent storage.
+A command-line application to manage daily expenses with categorization, summaries, and persistent storage.
 
 ### ✨ Key Features
 
-* ➕ **Add Expense** (description, amount in PKR, category)
-* 📋 **View All Expenses** with total
-* 📊 **Category Summary** with percentages
-* 🔍 **Filter by Category**
-* 🗑️ **Delete Expense by ID**
-* 💾 **Auto-Save** to `expenses.json`
-* 📂 **Auto-Create File** on first run
+* Add expenses (description, amount, category)
+* View all expenses with totals
+* Category-wise summaries and percentages
+* Filter expenses by category
+* Delete expenses by ID
+* Automatic saving to `expenses.json`
 
 ### 🛠️ Tech Stack
 
@@ -54,7 +49,7 @@ A CLI application to track daily expenses with categories, summaries, and persis
 * JSON
 * Standard Library (`os`, `json`)
 
-### 🚀 How to Run
+### 🚀 Run Locally
 
 ```bash
 git clone https://github.com/Hamza-Ali0719/CloudExify-Project-1.git
@@ -62,32 +57,22 @@ cd CloudExify-Project-1
 python expense_tracker.py
 ```
 
-### 📸 Sample Output
-
-| Feature     | Screenshot                    |
-| ----------- | ----------------------------- |
-| Main Menu   | screenshots/1_main_menu.png   |
-| Add Expense | screenshots/2_add_expense.png |
-| View All    | screenshots/3_view_all.png    |
-
 ---
 
 ## 🎓 Project 2: Student Grade Management System
 
-### 🎯 What It Does
+### 🎯 Overview
 
-A CLI system for managing student records, grades, and class performance.
+A CLI-based system for managing student records, academic performance, and rankings.
 
 ### ✨ Key Features
 
-* ➕ **Add Student** (5 subjects: Math, Physics, English, Computer, Urdu)
-* 📋 **View All Students** with averages and status
-* 🏆 **Class Report** (stats + rankings 🥇🥈🥉)
-* 🔍 **Search Student by Name**
-* ✏️ **Edit Grades**
-* 🗑️ **Delete Student**
-* 💾 **Auto-Save** to `students.csv`
-* 📂 **Auto-Create File**
+* Add students with subject grades
+* View student list with averages and status
+* Generate class reports with rankings
+* Search students by name
+* Edit or delete student records
+* Persistent storage using `students.csv`
 
 ### 🛠️ Tech Stack
 
@@ -95,7 +80,7 @@ A CLI system for managing student records, grades, and class performance.
 * CSV
 * Standard Library (`os`, `csv`)
 
-### 🚀 How to Run
+### 🚀 Run Locally
 
 ```bash
 git clone https://github.com/Hamza-Ali0719/CloudExify-Project-2.git
@@ -103,47 +88,98 @@ cd CloudExify-Project-2
 python grade_system.py
 ```
 
-### 📸 Sample Output
+---
 
-| Feature        | Screenshot                     |
-| -------------- | ------------------------------ |
-| Add Student    | screenshots/1_add_student.png  |
-| View All       | screenshots/2_view_all.png     |
-| Class Report   | screenshots/3_class_report.png |
-| Search Student | screenshots/4_search.png       |
+## 🎮 Project 3: Python Quiz Game
+
+### 🎯 Overview
+
+An interactive quiz game that evaluates Python knowledge through randomized questions and scoring.
+
+### ✨ Key Features
+
+* 20+ Python questions (fundamentals)
+* Randomized question order
+* Real-time answer feedback
+* Grade system (A–F)
+* High score tracking (`highscore.txt`)
+* Replay functionality
+
+### 🛠️ Tech Stack
+
+* Python 3.x
+* `random`, `os`, `datetime`
+
+### 🚀 Run Locally
+
+```bash
+git clone https://github.com/Hamza-Ali0719/cloudexify-python-p3-hamzaali.git
+cd cloudexify-python-p3-hamzaali
+python quiz_game.py
+```
+
+---
+
+## 📋 Project 4: To-Do List Manager
+
+### 🎯 Overview
+
+A comprehensive CLI task manager for organizing tasks with priorities, due dates, and analytics.
+
+### ✨ Key Features
+
+* Add tasks with priority and due date
+* View tasks sorted by priority
+* Filter by status or priority
+* Mark tasks as completed
+* Delete tasks with confirmation
+* Statistics dashboard with progress tracking
+* Search and edit tasks (Bonus)
+* Persistent storage (`tasks.json`)
+
+### 🛠️ Tech Stack
+
+* Python 3.x
+* JSON
+* `datetime`, `os`
+
+### 🚀 Run Locally
+
+```bash
+git clone https://github.com/Hamza-Ali0719/cloudexify-python-p4-hamzaali.git
+cd cloudexify-python-p4-hamzaali
+python todo_manager.py
+```
 
 ---
 
 ## 🧠 Key Learnings
 
-| Skill                         | How I Applied It                      |
-| ----------------------------- | ------------------------------------- |
-| Functions & Code Organization | Modular functions for each feature    |
-| Data Structures               | Used dictionaries for structured data |
-| JSON File Handling            | Stored and managed expense data       |
-| CSV File Handling             | Managed tabular student records       |
-| Error Handling                | Used `try/except` for validation      |
-| Auto-Save Logic               | Saved data after every operation      |
-| File Path Handling            | Ensured correct file paths using `os` |
+| Skill             | Application                              |
+| ----------------- | ---------------------------------------- |
+| Code Structuring  | Modular functions across all projects    |
+| Data Structures   | Dictionaries and lists for data handling |
+| File Handling     | JSON (Projects 1 & 4), CSV (Project 2)   |
+| Randomization     | Quiz logic (Project 3)                   |
+| Datetime Handling | Task timestamps (Project 4)              |
+| Error Handling    | Input validation using `try/except`      |
+| Persistence       | Auto-save after every operation          |
+| CLI Design        | Clean menus and user interaction         |
 
 ---
 
 ## 📂 Folder Structure
 
 ```
-CloudExify-Month-1/
+CloudExify-Internship/
 │
-├── CloudExify-Project-1/
-│   ├── expense_tracker.py
-│   ├── expenses.json
-│   ├── README.md
-│   └── screenshots/
+├── Month-1/
+│   ├── Project-1/
+│   └── Project-2/
 │
-├── CloudExify-Project-2/
-│   ├── grade_system.py
-│   ├── students.csv
-│   ├── README.md
-│   └── screenshots/
+├── Month-2/
+│   ├── Project-3/
+│   └── Project-4/
 │
 └── README.md
 ```
@@ -153,29 +189,39 @@ CloudExify-Month-1/
 ## ⚙️ Requirements
 
 * Python **3.6+**
-* No external dependencies (only standard library)
+* No external dependencies
 * Recommended IDE: **VS Code**
 
 ---
 
-## 📎 Project Links
+## 🔗 Project Links
 
-* 🔗 [Expense Tracker Repository](https://github.com/Hamza-Ali0719/CloudExify-Internship/tree/main/CloudExify-Project-1)
-* 🔗 [Grade Management System Repository](https://github.com/Hamza-Ali0719/CloudExify-Internship/tree/main/CloudExify-Project-2)
+* Project 1: https://github.com/Hamza-Ali0719/CloudExify-Project-1
+* Project 2: https://github.com/Hamza-Ali0719/CloudExify-Project-2
+* Project 3: https://github.com/Hamza-Ali0719/cloudexify-python-p3-hamzaali
+* Project 4: https://github.com/Hamza-Ali0719/cloudexify-python-p4-hamzaali
 
 ---
 
 ## 🙏 Final Thoughts
 
-Month 1 marked a strong transition from writing simple scripts to building **fully functional applications with persistent storage**.
+This internship significantly improved my ability to build **complete, real-world Python applications** with:
 
-These projects are:
+* Clean, maintainable code
+* Structured data storage
+* Robust validation and error handling
+* Professional documentation
 
-* ✅ Practical
-* ✅ Well-structured
-* ✅ Ready for real-world demonstration
+Each project reflects a step forward in my development journey—from basic scripting to structured application design.
 
-Now, moving forward to **Month 2 🚀**
+---
+
+## 🏆 Next Steps
+
+* Explore advanced Python concepts
+* Learn backend frameworks (Flask, FastAPI)
+* Build full-stack applications
+* Work on real-world scalable systems
 
 ---
 
@@ -183,7 +229,7 @@ Now, moving forward to **Month 2 🚀**
 
 **Hamza Ali**
 📍 COMSATS University Islamabad (Lahore Campus)
-📅 July 2026
+📅 July – August 2026
 🔗 GitHub: https://github.com/Hamza-Ali0719
 
 ---
